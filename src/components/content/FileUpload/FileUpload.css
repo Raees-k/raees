@@ -1,0 +1,33 @@
+.files input {
+ -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+ transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  text-align: center !important;
+  padding: 2%;
+  margin: 0;
+  width: 100% !important;
+}
+.color input{ background-color:#f1f1f1;}
+
+.AttachmentLabel{
+    background-color: #eeeeee;
+    width: 100%;
+    font-weight: bold;
+    height: 40px;
+    padding: 9px;
+}
+.file-upload-btn{
+  margin-top: 5%;
+}
+
+.attachment-link{
+ color: #007bff !important;
+}
+
+.attachment-delete{
+ color:red !important;
+}
+
+.attach-del-btn{
+ padding:3px;
+ font-size: 12px;
+}

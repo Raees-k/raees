@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sites/apps/PMO/static/css/main.3604128c.chunk.css",
+    "main.js": "/sites/apps/PMO/static/js/main.42be699f.chunk.js",
+    "main.js.map": "/sites/apps/PMO/static/js/main.42be699f.chunk.js.map",
+    "runtime-main.js": "/sites/apps/PMO/static/js/runtime-main.75797fcb.js",
+    "runtime-main.js.map": "/sites/apps/PMO/static/js/runtime-main.75797fcb.js.map",
+    "static/css/2.c11832e3.chunk.css": "/sites/apps/PMO/static/css/2.c11832e3.chunk.css",
+    "static/js/2.701ca7a4.chunk.js": "/sites/apps/PMO/static/js/2.701ca7a4.chunk.js",
+    "static/js/2.701ca7a4.chunk.js.map": "/sites/apps/PMO/static/js/2.701ca7a4.chunk.js.map",
+    "index.html": "/sites/apps/PMO/index.html",
+    "precache-manifest.7fc1100de1ab7be1d98c0246303fd3bf.js": "/sites/apps/PMO/precache-manifest.7fc1100de1ab7be1d98c0246303fd3bf.js",
+    "service-worker.js": "/sites/apps/PMO/service-worker.js",
+    "static/css/2.c11832e3.chunk.css.map": "/sites/apps/PMO/static/css/2.c11832e3.chunk.css.map",
+    "static/css/main.3604128c.chunk.css.map": "/sites/apps/PMO/static/css/main.3604128c.chunk.css.map",
+    "static/js/2.701ca7a4.chunk.js.LICENSE.txt": "/sites/apps/PMO/static/js/2.701ca7a4.chunk.js.LICENSE.txt",
+    "static/media/alrashid-logo.png": "/sites/apps/PMO/static/media/alrashid-logo.b498335f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75797fcb.js",
+    "static/css/2.c11832e3.chunk.css",
+    "static/js/2.701ca7a4.chunk.js",
+    "static/css/main.3604128c.chunk.css",
+    "static/js/main.42be699f.chunk.js"
+  ]
+}

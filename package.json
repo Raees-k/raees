@@ -1,0 +1,77 @@
+{
+  "name": "alrashid-po-application",
+  "version": "0.1.0",
+  "description": "Al Rashid PO Application",
+  "author": "Resemble Systems",
+  "homepage": "https://alrashidabetong.sharepoint.com/sites/apps/PMO",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/react-fontawesome": "^0.1.2",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "@sweetalert/with-react": "^0.1.1",
+    "add-subtract-date": "^1.0.14",
+    "availity-reactstrap-validation": "^2.6.1",
+    "bootstrap": "^4.2.0",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.14.0",
+    "file-saver": "^2.0.2",
+    "material-table": "^1.68.0",
+    "material-ui": "^1.0.0-beta.47",
+    "material-ui-datetime-range-picker": "^1.0.0",
+    "materialui-daterange-picker": "^1.1.91",
+    "mdbreact": "^4.27.0",
+    "moment": "^2.27.0",
+    "react": "^16.13.1",
+    "react-bootstrap-buttons": "^1.0.0",
+    "react-circular-progressbar": "^2.0.3",
+    "react-countup": "^4.3.3",
+    "react-csv": "^2.0.3",
+    "react-data-export": "^0.6.0",
+    "react-data-grid": "^4.0.9",
+    "react-date-range": "^1.0.3",
+    "react-dom": "^16.13.1",
+    "react-dom-factories": "^1.0.2",
+    "react-dropdown-select": "^4.4.1",
+    "react-file-base64": "^1.0.3",
+    "react-moment": "^0.9.7",
+    "react-number-format": "^4.4.1",
+    "react-paginate": "^6.3.2",
+    "react-redux-datatable": "^2.4.7",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "reactstrap": "^8.4.1",
+    "sweetalert": "^2.1.2",
+    "uuid": "^8.1.0",
+    "xlsx": "^0.16.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "datatables.net": "^1.10.21",
+    "jquery": "^3.5.1",
+    "sp-rest-proxy": "^2.11.1"
+  },
+  "proxy": "http://localhost:8080/"
+}

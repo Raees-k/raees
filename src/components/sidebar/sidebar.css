@@ -1,0 +1,12 @@
+.CircularProgressbar {
+    width: 13%;
+    vertical-align: middle;
+    margin-left: 3%;
+  }
+  text.CircularProgressbar-text>:hover{
+    fill:red;
+  }
+  #maint{
+    MARGIN-LEFT: 32%;
+    MARGIN-RIGHT: 33%;
+  }
