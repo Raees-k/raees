@@ -46,6 +46,7 @@
     "react-scripts": "^3.0.1",
     "reactstrap": "^8.4.1",
     "sweetalert": "^2.1.2",
+    "strip-ansi": "^5.2.0",
     "uuid": "^8.1.0",
     "xlsx": "^0.16.4"
   },
