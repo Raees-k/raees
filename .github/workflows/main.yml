@@ -8,15 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
- 
-      
-        env:
+    
+env:
           SP_CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
           SP_CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
           SP_SITE_URL: ${{ secrets.SP_SITE_URL }}
           SP_LIBRARY_PATH: "SiteAssets/Build" # Change this to your destination folder path
-        run: |
+run-name: |
           npm install -g @pnp/office365-cli
           office365 login --authType password --userName $SP_CLIENT_ID --password $SP_CLIENT_SECRET
           office365 spo login $SP_SITE_URL
