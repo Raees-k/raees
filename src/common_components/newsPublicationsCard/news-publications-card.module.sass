@@ -1,0 +1,73 @@
+@import '../../variable'
+
+.whats_new_card
+    background-color: $white_color
+    width: 332px
+    height: 457px
+    @extend %box_shadow
+
+.whats_new_card_image
+    height: $two_hundred_two_px
+    background-color: #e4e4e4
+
+.skeleton_Img
+    width: 284px $important
+    height: 175px $important
+
+.news_des
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 5
+    -webkit-box-orient: vertical
+.whats_new_card_text
+    height: 160px
+    overflow: hidden
+    &> h3
+        @extend %font_size_18
+        font-weight: $five_hundred
+        @extend %font_family_roboto
+    &> p
+        color: #9a9a9a
+        @extend %font_size_14
+        font-weight: $five_hundred
+        @extend %font_family_roboto
+
+.whats_new_card_btn
+    padding: $zero
+    border: $zero
+    &>h6
+        color: $primary
+        font-weight: $bold
+        @extend %font_family_lato
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .news_container
+        width: 910px
+    .whats_new_card
+        width: $full_width
+        height: $auto
+    .whats_new_card_image
+        // height: $auto
+        background-color: $white_color
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .news_container
+        width: $full_width
+    .whats_new_card
+        width: $full_width
+        height: $auto
+    .whats_new_card_image
+        // height: $auto
+        background-color: $white_color
+    .skeleton_Img
+        width: 190px $important
+        height: 175px $important
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .whats_new_card
+        width: $full_width
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .skeleton_Img
+        width: 300px $important
+        height: 175px $important

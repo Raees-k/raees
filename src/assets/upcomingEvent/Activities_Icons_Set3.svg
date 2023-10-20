@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="312.327" height="407.122" viewBox="0 0 312.327 407.122">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_42" data-name="Rectangle 42" width="312.327" height="407.122" rx="36" transform="translate(572 2782)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Activities_Icons_Set3" data-name="Activities Icons Set3" transform="translate(-572 -2782)" opacity="0.405" clip-path="url(#clip-path)">
+    <path id="Exclusion_2" data-name="Exclusion 2" d="M124,197H61a20.983,20.983,0,0,1-21-21V106H21A20.983,20.983,0,0,1,0,85V21A20.983,20.983,0,0,1,21,0H84a20.983,20.983,0,0,1,21,21V83h19a20.983,20.983,0,0,1,21,21v72a20.983,20.983,0,0,1-21,21ZM40,106H84a20.983,20.983,0,0,0,21-21V83H61a20.983,20.983,0,0,0-21,21v2Z" transform="translate(780 2743.607)" fill="#fff"/>
+  </g>
+</svg>

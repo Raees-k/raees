@@ -1,0 +1,97 @@
+@import '../../../variable'
+
+.service_type_bg
+    background-repeat: $no_repeat
+    background-size: $full_width 90%
+    height: 1000px
+    padding-top: 280px
+    bottom: $zero
+
+.service_type_container
+    margin: $zero $auto
+    @extend %container_width
+
+.service_type_title
+    font-weight: $bold
+    font-size: 28px
+    @extend %font_family_oswald
+
+.service_type_des
+    @extend %font_size_16
+    @extend %font_family_lato
+    height: 400px
+
+.service_type_image,
+.service_type_image_box
+    border-radius: 32px
+    overflow: hidden
+
+.service_type_image
+    // width: 450px
+    // height: 450px
+
+.service_type_image_box
+    height: 450px
+    width: 450px
+    box-shadow: 30px 30px $secondary
+
+.service_type_video
+    width: 450px
+    height: 450px
+    &>div
+        &>iframe
+            border-radius: 32px
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .service_type_bg
+        height: 810px
+        padding-top: 225px
+
+// @media only screen and (max-width: $beakpoint_desktop)
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .service_type_bg
+        height: 790px
+        padding-top: 200px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .service_type_bg
+        height: 770px
+        padding-top: 180px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .service_type_bg
+        height: 700px
+        padding-top: 125px
+    .service_type_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .service_type_bg
+        height: 870px
+        padding-top: 65px
+    .service_type_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .service_type_bg
+        height: 890px
+    .service_type_container
+        width: 95%
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .service_type_container
+        width: 98%
+    .service_type_des
+        font-size: 14px $important
+    .service_type_bg
+        height: 850px
+        padding-top: 0px
+    .service_type_image
+        width: 320px
+        height: 320px
+    .service_type_image_box
+        height: 320px
+        width: 320px
+    .service_type_video
+        width: 320px $important
+        height: 320px $important

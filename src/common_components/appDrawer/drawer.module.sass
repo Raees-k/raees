@@ -1,0 +1,78 @@
+@import '../../variable'
+
+// .drawer_bg
+// ::-webkit-scrollbar
+//     height: 15px
+//     width: 8px
+
+// ::-webkit-scrollbar-track
+//     background-color: #e4e4e4
+//     -webkit-border-radius: 20px
+//     border-radius: 20px
+
+// ::-webkit-scrollbar-thumb
+//     -webkit-border-radius: 10px
+//     border-radius: 20px
+//     background: rgba(53, 51, 51, 0.3)
+
+.close_Icon_btn
+    color: $white_color
+    font-size: $thirty-two
+
+.close_btn
+    color: $white_color
+    font-size: 22px
+    font-weight: $bold
+    @extend %font_family_lato
+
+.list_header
+    color: $white_color
+    font-size: 21px
+    @extend %font_family_roboto
+
+.list_items
+    list-style-type: none
+    width: 290px
+    a
+        color: $white_color
+        opacity: 0.7
+        font-weight: $five_hundred
+        font-size: 20px
+        @extend %font_family_lato
+
+.search_icon
+    font-size: 22px
+    font-weight: 600
+
+.search_btn
+    color: $white_color
+    height: 54px
+    &:focus,
+    &:focus
+        color: $white_color $important
+
+.sign_up_btn,
+.sign_in_btn
+    width: 145px
+    height: 54px
+    @extend %font_family_lato
+    @extend %font_size_18
+
+.sign_up_btn
+    background: $white_color
+    color: $primary $important
+    &:hover,
+    &:focus
+        background: $white_color
+
+%sign_in_btn_bg_font
+    background: transparent linear-gradient(110deg, #43A937 0%, #233872 100%) 0% 0% no-repeat padding-box
+    color: $white_color
+
+.sign_in_btn
+    box-shadow: 0px 3px 6px #337D582E
+    border-radius: 6px
+    @extend %sign_in_btn_bg_font
+    &:hover,
+    &:focus
+        @extend %sign_in_btn_bg_font

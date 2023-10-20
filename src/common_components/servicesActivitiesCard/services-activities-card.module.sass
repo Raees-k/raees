@@ -1,0 +1,104 @@
+@import '../../variable'
+
+.service_left_container
+  text-align: $center
+
+.services_tilte
+  font-size: 35px
+  width: 178px
+  height: 91px
+  margin-right: $auto
+  margin-left: $auto
+  @extend %text_align_left
+  @extend %font_family_lato
+
+.card_avatar_container
+  @extend %display_flex
+  height: $two_hundred_two_px
+  justify-content: $center
+  align-items: $center
+
+.card_text_container
+  @extend %display_flex
+  flex-direction: column
+  height: $two_hundred_two_px
+  justify-content: $center
+  align-items: $center
+
+.services_card
+  background-color: $white_color
+  border-radius: 8px
+  box-shadow: 1px 1px 12px #00000029
+  // width: 358px
+  width: $full_width
+  height: $two_hundred_two_px
+  cursor: pointer
+
+.services_card_text
+  width: 131px
+  @extend %font_size_18
+  font-weight: $bold
+  @extend %font_family_roboto
+
+.services_know_more
+  color: $theme_green
+  @extend %font_size_18
+  font-weight: $five_hundred
+  @extend %font_family_roboto
+
+.card_avatar
+  width: $one_hundred_thirtysix_px
+  height: $one_hundred_thirtysix_px
+  line-height: $one_hundred_thirtysix_px
+  background-color: #e1efda
+
+.services_btn_container
+  @extend %display_flex
+  @extend %djustify_content_flexend
+  padding-right: 180px
+
+.services_know_more_btn
+  padding: $zero
+  border: $zero
+  background-color: $white_color
+  &:hover
+    background-color: $white_color
+
+.service_btn_container
+  @extend %display_flex
+  justify-content: $center
+
+.service_btn_container_tab_view
+  @extend %display_flex
+  @extend %djustify_content_flexend
+  width: $full_width
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+  .services_card
+    // width: $full_width
+
+  .card_avatar
+    width: $one_hundred_twentyfive_px
+    height: $one_hundred_twentyfive_px
+    line-height: $one_hundred_twentyfive_px
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+  .service_card_container
+    justify-content: $center
+
+  // .services_card
+    // width: 360px
+
+  .card_avatar
+    width: $one_hundred_thirtysix_px
+    height: $one_hundred_thirtysix_px
+    line-height: $one_hundred_thirtysix_px
+
+  .service_btn_container
+    width: $full_width
+
+  .service_btn_container_tab_view
+    width: 732px
+@media only screen and (max-width: $beakpoint_tablet_s)
+  // .services_card
+  //   width: 340px

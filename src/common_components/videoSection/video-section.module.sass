@@ -1,0 +1,41 @@
+@import '../../variable'
+
+.video
+    width: $full_width
+    height: 480px
+    background-size: cover
+
+.viewPort_container
+    width: $full_width
+    height: 480px
+
+.image_container
+    width: $full_width
+    height: 480px
+    position: relative
+
+.vimage_container
+    overflow: hidden
+    display: $flex
+    justify-content: center
+    align-items: center
+
+.image
+    width: 1600px
+    height: 550px
+    opacity: 0.70
+
+.video_title_container
+    height: 480px
+    z-index: 100
+    top: 50px
+
+.video_title
+    color: $white_color
+    font-size: 35px
+    text-align: $center
+    @extend %font_family_roboto
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .video_title
+        font-size: 25px

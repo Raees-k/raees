@@ -1,0 +1,91 @@
+@import '../../../variable'
+
+.introduction_bg
+    display: $flex
+    width: $full_width
+    justify-content: $center
+    height: 835px
+    padding-top: 280px
+    bottom: $zero
+    position: $position_relative
+
+.introduction_container
+    margin: $zero $auto
+    @extend %container_width
+    position: $position_absolute
+
+.image_container
+    margin: $zero $auto
+    position: $position_relative
+    width: $full_width
+
+.image
+    width: $full_width
+    height: 350px $important
+
+.bullet
+    list-style: none
+    li
+        @extend  %font_size_18
+        @extend %font_family_roboto
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .introduction_bg
+        height: 725px
+        padding-top: 220px
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .introduction_bg
+        padding-top: 225px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .introduction_bg
+        height: 680px
+        padding-top: 190px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .introduction_bg
+        height: 680px
+        padding-top: 170px
+    .introduction_container
+        width: 88%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .introduction_bg
+        height: 565px
+        padding-top: 100px
+    .introduction_container
+        width: 90%
+        .bullet
+            list-style: none
+            margin-top: 0px
+        li
+            font-size: 16px $important
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .introduction_bg
+        height: 810px
+        padding-top: 130px
+    .introduction_container
+        width: 90%
+    .bullet
+        list-style: none
+        margin-top: 50px
+        li
+            font-size: 16px $important
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .introduction_bg
+        height: 745px
+        padding-top: 75px
+    .introduction_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .introduction_bg
+        height: 750px
+        padding-top: 0px
+    .bullet
+        margin-top: 12px
+        li
+            font-size: 14px $important

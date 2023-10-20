@@ -1,0 +1,61 @@
+@import '../../../variable'
+
+.mission_bg
+    display: $flex
+    width: $full_width
+    justify-content: $center
+
+.mission_container
+    margin: $zero $auto
+    @extend %container_width
+
+.mission_title
+    font-size: 35px
+    @extend %font_family_oswald
+
+.mission_list
+    color: $white_color
+    background-color: #1E4A54F2
+    width: 628px
+    height: 71px
+    display: $flex
+    align-items: $center
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 94% 99%, 0 100%)
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .mission_container
+        @include container_width_sm_laptop
+    .mission_list
+        width: 470px
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .mission_title
+        width: 90%
+    .mission_container
+        width: 90%
+    .mission_list
+        font-size: 11px
+        width: 450px
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .mission_title
+        width: 90%
+    .mission_container
+        width: 95%
+    .mission_list
+        font-size: 11px
+        width: 400px
+    .mission_bg
+        background-position: 145% 50%,0% 60%,0px 59% $important
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .mission_bg
+        background-size: 0%, 30%, 50%
+        background-position: 0%,0% 48%,0px 48% $important
+    .mission_title
+        width: 80%
+        .mission_container
+            width: 90%
+    .mission_list
+        font-size: 11px $important
+        width: 85% $important

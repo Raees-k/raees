@@ -1,0 +1,33 @@
+@import '../../../variable'
+
+.news_bg
+    width: $full_width
+    padding-top: 35px
+
+.news_container
+    margin: $zero $auto
+    @extend %container_width
+
+.news_tilte
+    font-size: 35px
+    @extend %font_family_oswald
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .news_bg
+        padding-top: 50px
+    .news_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .news_bg
+        padding-top: 35px
+    .news_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .news_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .news_bg
+        padding-top: 20px

@@ -1,0 +1,42 @@
+@import  '../../../../variable'
+
+.media_subtitle
+  color: #223771
+  font-size: 24px
+  font-weight: $bold
+  @extend %font_family_oswald
+
+.gallery_image_card
+  width: $full_width
+  height: 250px
+  overflow: hidden
+  border-radius: 12px
+  box-shadow: 1px 1px 12px #00000029
+  position: $position_relative
+  background-color: #00000050
+
+.document_text
+  color: $white_color
+  font-size: 22px
+
+.video_play_btn
+  position: $position_absolute
+  z-index: 100
+  display: $flex
+  justify-content: $center
+  align-items: $center
+  width: $full_width
+  height: 100%
+  background-color: #00000050
+
+.play_icon
+  font-size: 100px
+  color: $white_color
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+  .gallery_image_card
+    height: 210px $important
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+  .gallery_image_card
+    height: 170px $important

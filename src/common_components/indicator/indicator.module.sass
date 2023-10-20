@@ -1,0 +1,31 @@
+@import '../../variable'
+
+.footer
+    min-height: 95px
+    max-height: $auto
+    background: #F1F6FF31
+    display: $flex
+    align-items: $center
+
+.footer_row
+    display: $flex
+    height: $full_width
+    align-items: $center
+
+.indicator_box
+    width: 20px
+    height: 20px
+    border-radius: 4px
+    margin: 0 10px
+    cursor: pointer
+
+.indecator_text
+    font-size: 14px
+    height: 20px
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .footer
+        min-height: 120px
+        max-height: $auto
+    .indecator_text
+        font-size: 12px

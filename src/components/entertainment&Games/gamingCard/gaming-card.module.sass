@@ -1,0 +1,67 @@
+@import '../../../variable'
+
+.gaming_card
+    background-color: $white_color
+    overflow: hidden
+    height: $auto
+    box-shadow: 0px 3px 12px #0000003C
+    border-radius: 8px
+
+.gaming_card_image
+    height: 210px
+    width: $full_width
+    position: $position_relative
+
+.text_container
+    height: 140px
+
+.text_container_game
+    height: 180px
+
+.skeleton_Img
+    width: 370px $important
+    height: 210px $important
+
+.gaming_card_text
+    &> h3
+        font-size: 21px
+        font-weight: $bold
+        @extend %font_family_roboto
+    &> p
+        color: #000000
+        @extend %font_size_16
+        font-weight: $bold
+        @extend %font_family_roboto
+
+.gaming_class_span
+    color: #9a9a9a $important
+
+.gaming_registered
+    color: #9a9a9a
+    @extend %font_family_roboto
+    @extend %font_size_16
+
+.text_button
+    width: $full_width
+    height: 54px $important
+    background-color: $yellow_color
+    @extend %font_size_18
+    border: $zero
+    font-weight: $six_hundred
+    @extend %font_family_roboto
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .gaming_card
+        width: $auto
+        height: $auto
+    .skeleton_Img
+        width: 220px $important
+        height: 210px $important
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .gaming_card_text
+        &> h3
+            font-size: 18px
+    .skeleton_Img
+        width: 383px $important
+        height: 210px $important

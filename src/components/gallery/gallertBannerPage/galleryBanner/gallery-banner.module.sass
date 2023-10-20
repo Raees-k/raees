@@ -1,0 +1,66 @@
+@import "../../../../variable"
+
+.bg
+    width: $full_width
+    height: 450px
+    position: $position_relative
+    background-repeat: $no_repeat
+
+.container
+    height: 460px
+    @extend %container_width
+    margin: $zero $auto
+
+.gallery_banner_container
+    height: 380px
+    // display: $flex
+    // object-fit: contain
+    // position: $position_relative
+    // background-position: $full_width
+    // margin: $zero $auto
+
+.gallery_image
+    border-radius: 16px
+    display: $flex
+    position: $position_relative
+    justify-content: $center
+    box-shadow: 1px 1px 12px #00000029
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .bg
+        background-size: $full_width 105%
+        height: 1137px
+
+// @media only screen and (max-width: $beakpoint_laptop_l)
+//     .gallery_banner_container
+//         background-size: $full_width 102%
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .gallery_banner_container
+        height: 330px
+    .container
+        height: 392px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .gallery_banner_container
+        height: 300px
+    .container
+        height: 350px
+        width: 90%
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .gallery_banner_container
+        height: 300px
+    .container
+        height: 392px
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .gallery_banner_container
+        height: 300px
+    .container
+        height: 392px
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .gallery_banner_container
+        height: 135px
+    .container
+        height: 175px

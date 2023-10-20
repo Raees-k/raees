@@ -1,0 +1,46 @@
+@import '../../../variable'
+
+.service_bg
+  background-repeat: $no_repeat
+  background-size: $full_width 85%
+
+.service_container
+  margin: $zero $auto
+  @extend %container_width
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+  .service_bg
+    background-size: $full_width 96%
+
+@media only screen and (max-width: $beakpoint_desktop)
+  .service_bg
+    background-size: $full_width 90%
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+  .service_bg
+    background-size: $full_width 85%
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+  .service_bg
+    background-size: $full_width 79%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+  .service_container
+    @include container_width_sm_laptop
+  .service_bg
+    background-size: $full_width 64%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+  .service_container
+    width: $full_width
+  .service_bg
+    background-size: $full_width 49%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+  .service_container
+    width: $full_width
+  .service_bg
+    background-size: $full_width 37.9%
+@media only screen and (max-width: $beakpoint_mobile_l)
+  .service_bg
+    background-size: $full_width 57%

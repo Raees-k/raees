@@ -1,0 +1,28 @@
+@import '../../../variable'
+
+.map_container
+    height: 550px
+    @extend %container_width
+    box-shadow: 20px 7px 20px 4px #0000001F
+    border: 1px solid #9ad5ff
+
+.contact_map_bg
+    width: $full_width
+    margin-top: 50px
+
+.contact_map_container
+    margin: $zero $auto
+    height: 730px
+    width: 80%
+
+.contact_map_title
+    font-size: 35px
+    font-weight: $five_hundred
+    @extend %font_family_roboto
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .map_container
+        width: 100% $important
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .contact_map_title
+        font-size: 28px $important

@@ -1,0 +1,17 @@
+@import '../../../variable'
+
+.gamecard_section_bg
+    width: $full_width
+
+.gamecard_section_container
+    margin: $zero $auto
+    @extend %container_width
+
+.gamecard_section_tilte
+    font-size: 35px
+    margin-bottom: 36px
+    @extend %font_family_oswald
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .gamecard_section_container
+        width: 90%

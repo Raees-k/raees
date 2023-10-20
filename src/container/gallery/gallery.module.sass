@@ -1,0 +1,50 @@
+@import "../../variable"
+
+.gallery_bg
+    width: $full_width
+    background-repeat: $no_repeat
+    background-size: contain
+    background-color: #F5F9F9
+
+@media only screen and (max-width: $beakpoint_desktop_l)
+    .gallery_bg
+        height: 720px
+        background-position: $full_width -153%
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .gallery_bg
+        background-position: $full_width -43%
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .gallery_bg
+        background-position: $full_width -50%
+        height: 630px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .gallery_bg
+        background-position: $full_width -90%
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .gallery_bg
+        background-position: $full_width -20%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .gallery_bg
+        background-position: $full_width -3%
+        height: 550px
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .gallery_bg
+        background-position: $full_width -8%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .gallery_bg
+        background-position: $full_width -5%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .gallery_bg
+        background-position: $full_width 0%
+        height: 360px
+@media only screen and (max-width: $beakpoint_mobile_s)
+    .gallery_bg
+        background-position: $full_width 0%

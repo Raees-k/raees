@@ -1,0 +1,90 @@
+@import '../../../variable'
+
+.events_bg
+    display: $flex
+    width: $full_width
+    justify-content: $center
+    height: 850px
+    position: $position_relative
+
+.events_container
+    margin: $zero $auto
+    @extend %container_width
+    position: $position_absolute
+    bottom: $zero
+
+.upcoming_events_title
+    font-size: 35px
+    @extend %font_family_oswald
+
+.event_title
+    @extend %font_size_32
+    font-weight: bold
+    @extend %font_family_oswald
+
+.event_author
+    @extend %font_size_20
+    @extend %font_family_roboto
+    color: #6A6A6A
+
+.event_description
+    @extend %font_size_16
+    @extend %font_family_lato
+    height: 135px
+
+%btn
+    background-color: $navyblue_color
+    color: $white_color
+
+.register_now
+    @extend %btn
+    &:focus,
+    &:hover
+        @extend %btn
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .events_bg
+        height: 835px
+    .events_container
+        top: 180px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .events_container
+        top: 155px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .events_bg
+        height: 780px
+    .events_container
+        top: 105px
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .events_bg
+        height: 660px
+    .events_container
+        top: 65px
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .events_bg
+        height: 660px
+    .events_container
+        top: 65px
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .events_bg
+        height: 670px
+    .events_container
+        top: 45px
+        width: 95%
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .event_title
+        display: none $important
+    .event_author
+        display: none $important
+    .event_description
+        display: none $important
+    .events_container
+        top: -20px

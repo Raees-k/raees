@@ -1,0 +1,127 @@
+@import '../../../variable'
+
+.banner_container
+  @extend %banner_height
+  background-color: #999
+
+.image
+  width: $full_width
+  // @extend %banner_height
+  // width: 1920px
+  // height: 1080px
+
+.banner_container_shade
+  background-color: #00000050
+  z-index: 100
+
+.video_thumbnail_container
+  background-color: #999
+  width: $full_width
+  @extend %banner_height
+
+.video_play_btn
+  position: $position_absolute
+  z-index: 100
+  display: $flex
+  justify-content: $center
+  align-items: $center
+  width: $full_width
+  height: 100%
+  background-color: #00000050
+  @extend %banner_height
+
+.banner_shade
+  position: $position_absolute
+  width: $full_width
+  background-color: #00000050
+  @extend %banner_height
+
+.play_icon
+  font-size: 8vw
+  color: $white_color
+
+.skeleton_image
+  &>div
+    height: 500px $important
+    width: 500px $important
+    background: #00000000 $important
+
+.text
+  background-color: #00000000 $important
+  top: 350px $important
+  width: 1200px $important
+  opacity: $one $important
+  z-index: 200
+  @extend %text_align_left
+
+.text_title
+  font-size: 4vw $important
+  // @extend %font_size_32
+  color: $white_color
+  font-weight: $five_hundred
+  @extend %font_family_oswald
+
+.text_des
+  color: $white_color
+  font-size: 1.5vw $important
+  @extend %font_family_roboto
+
+.text_time
+  color: $white_color
+  font-size: 1.2vw $important
+  @extend %font_family_roboto
+
+.text_button
+  width: 16vw
+  height: 3.5vw $important
+  background-color: $yellow_color
+  font-size: 1.5vw $important
+  border: $zero
+  font-weight: $six_hundred
+  @extend %font_family_roboto
+  &:hover,
+  &:focus
+    background-color: $yellow_color
+    color: $black_color
+
+@mixin banner_height_mobile
+  height: 500px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+  .text
+    top: 200px $important
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+  .text
+    top: 150px $important
+
+@media only screen and (max-width: $beakpoint_mobile_s)
+  .banner_container
+    @include banner_height_mobile
+
+  // .image
+  //   @include banner_height_mobile
+
+  .video_thumbnail_container
+    @include banner_height_mobile
+
+  .video_play_btn
+    @include banner_height_mobile
+
+  .text
+    width: 90% $important
+    top: 250px $important
+
+  .text_title
+    font-size: 25px $important
+
+  .text_des
+    font-size: 14px $important
+
+  .text_time
+    font-size: 12px $important
+
+  .text_button
+    font-size: 14px $important
+    width: 190px
+    height: 44px $important

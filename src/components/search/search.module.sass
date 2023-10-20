@@ -1,0 +1,83 @@
+@import '../../variable'
+
+.buysellsetion_section_bg
+    width: $full_width
+
+.buysellsetion_section_container
+    margin: $zero $auto
+    padding-top: 100px
+    @extend %container_width
+
+.buysellsection_section_tilte
+    font-size: 35px
+    margin-bottom: 36px
+    @extend %font_family_oswald
+
+.title_text
+    color: #e9e9e9
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 1
+    -webkit-box-orient: vertical
+
+.no_data_height
+    width: $full_width
+    height: 500px
+
+//Card css
+.buysell_card
+    width: 100%
+    height: 350px
+    background-color: $white_color
+    box-shadow: 0px 3px 12px #0000003C
+    border-radius: 8px
+    overflow: hidden
+
+.buysell_text
+    text-align: left
+    height: 90px
+    // font: normal normal bold 21px/26px Roboto
+    font-size: 18px
+    letter-spacing: 0px
+    color: #080808
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+.button
+    margin: $zero
+
+.buysell_mainImgConatiner
+    background-color: #43A937
+    position: relative
+    height: 140px
+    width: 100%
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .buysellsetion_section_container
+        padding-top: 250px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .buysellsetion_section_container
+        padding-top: 210px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .buysellsetion_section_container
+        width: 90%
+        padding-top: 150px
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .buysellsetion_section_container
+        width: 95%
+    .buysellsetion_section_bg
+        margin: $zero $auto
+        width: 86%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .buysellsetion_section_container
+        width: $full_width
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .buysellsetion_section_container
+        padding-top: 40px
+        width: 98%

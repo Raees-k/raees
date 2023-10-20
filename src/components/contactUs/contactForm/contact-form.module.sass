@@ -1,0 +1,74 @@
+@import '../../../variable'
+
+// .contact_form_bg
+
+.contact_form_container
+    margin: $zero $auto
+    @extend %container_width
+    padding-top: 265px
+// 
+
+.loader_container
+    position: $position_absolute
+    z-index: 100
+    display: $flex
+    justify-content: $center
+    align-items: $center
+    height: 650px
+    width: 715px
+
+.done_container
+    height: 650px
+
+.loader
+    height: 50px
+    width: 50px
+    color: $primary
+
+.registration_success
+    font-size: 100px
+
+.contact_form_title
+    font-size: 30px
+    font-weight: $five_hundred
+    @extend %font_family_roboto
+
+.contact_form_card
+    background: $white_color
+    box-shadow: 1px 1px 18px #0000001F
+    border-radius: 20px
+    border: 1px solid #d0d0d0
+    margin-bottom: 26px
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .contact_form_container
+        padding-top: 205px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .contact_form_container
+        padding-top: 175px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .contact_form_container
+        padding-top: 165px
+        width: 80% $important
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .contact_form_container
+        padding-top: 120px
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .contact_form_container
+        padding-top: 110px
+    .loader_container
+        height: 650px
+        width: 630px
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .contact_form_container
+        padding-top: 25px
+    .contact_form_title
+        font-size: 25px
+    .loader_container
+        height: 870px
+        width: 360px

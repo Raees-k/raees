@@ -1,0 +1,124 @@
+@import '../../../variable'
+
+.bg
+    display: $flex
+    width: $full_width
+    justify-content: $center
+    background-repeat: $no_repeat
+    background-size: $full_width
+
+.container
+    margin: $zero $auto
+    @extend %container_width
+
+.mobile_container
+    display: none $important
+
+.exe_team_title
+    font-size: 30px
+    @extend %font_family_oswald
+
+%container
+    display: $flex
+    align-items: $center
+    padding: 40px 0
+
+.hex_container
+    @extend %container
+    justify-content: $center
+
+.hex_container_r
+    @extend %container
+    justify-content: flex-end
+
+.hex_container_l
+    @extend %container
+    justify-content: flex-start
+
+.hex_border
+    display: $flex
+    justify-content: $center
+    align-items: $center
+    width: 278px
+    height: 241px
+    background-color: #999
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+
+.hex_white_space
+    display: $flex
+    justify-content: $center
+    align-items: $center
+    width: 276px
+    height: 239px
+    background-color: $white_color
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+
+.hex
+    display: $flex
+    justify-content: $center
+    align-items: $center
+    width: 248px
+    height: 211px
+    background-color: #999
+    color: $white_color
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+
+.orange
+    background-color: #F47720 $important
+
+.blue
+    background-color: #245DB7 $important
+
+.yellow
+    background-color: #F8C73A $important
+
+.purple
+    background-color: #6F1E5E $important
+
+.green
+    background-color: #299155 $important
+
+.hex_text
+    line-height: 18px
+    text-align: $center
+    @extend %font_size_16
+    @extend %font_family_lato
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .container
+        @include container_width_sm_laptop
+    // .container_small
+    //     display: none $important
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .container
+        width: 90%
+    // .container_small
+    //     display: none $important
+    .hex_border
+        width: 251px
+        height: 216px
+
+    .hex_white_space
+        width: 249px
+        height: 214px
+    .hex
+        width: 233px
+        height: 198px
+
+    .hex_text
+        @include font_size_14
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .container
+        display: none $important
+    .mobile_container
+        display: block $important
+        margin: $zero $auto
+        width: 270px
+    .exe_team_title
+        font-size: 26px

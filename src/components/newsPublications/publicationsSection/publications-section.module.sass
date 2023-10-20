@@ -1,0 +1,29 @@
+@import '../../../variable'
+
+.news_bg
+    display: $flex
+    width: $full_width
+    justify-content: $center
+    background-repeat: $no_repeat
+    background-size: $full_width
+
+.news_container
+    margin: $zero $auto
+    @extend %container_width
+
+.publication_title
+    font-size: 35px
+    @extend %font_family_oswald
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .news_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .news_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .news_container
+        width: 90%
+        padding-top: 20px

@@ -1,0 +1,70 @@
+@import '../../../variable'
+
+.image
+    border: 1px solid #707070
+    border-radius: 8px
+.intro_title
+    font-size: 35px
+    @extend %font_family_oswald
+.spacing_style
+    display: inline
+.intro_news_title
+    @extend %font_size_32
+
+.section_news_title
+    @extend %font_size_20
+
+.intro_news_title,
+.section_news_title
+    font-weight: $bold
+    @extend %font_family_oswald
+
+.intro_news_author
+    @extend %font_size_20
+
+.section_news_author
+    @extend %font_size_16
+
+.intro_news_author,
+.section_news_author
+    font-weight: $five_hundred
+    @extend %font_family_roboto
+    color: #6A6A6A
+
+.intro_news_created_date
+    @extend %font_size_18
+
+.section_news_created_date
+    @extend %font_size_16
+
+.intro_news_created_date,
+.section_news_created_date
+    @extend %font_family_roboto
+    color: #AFAFAF
+
+.intro_news_description
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 5
+    -webkit-box-orient: vertical
+    width: 90%
+    @extend %font_size_16
+    @extend %font_family_lato
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .intro_news_description
+        display: none $important
+    .intro_news_title
+        display: none $important
+    .intro_news_created_date
+        display: none $important
+    .button_spacing
+        margin-top: 45px $important
+        width: 30px $important
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .spacing_style
+        display: block
+        padding-left: 25px $important
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .spacing_style
+        padding: 0px $important

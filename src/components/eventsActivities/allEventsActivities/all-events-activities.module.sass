@@ -1,0 +1,69 @@
+@import "../../../variable"
+
+.container
+    margin: $zero $auto
+    @extend %container_width
+
+.all_events_title
+    font-size: 35px
+    @extend %font_family_oswald
+
+.indicatores_container
+    border: 1px $solid #2C2C2C4D
+    border-radius: 12px
+
+.empty_card
+    height: 400px
+    width: $full_width
+
+.dropDownList
+    font-size: 16px
+    @extend %font_family_roboto
+    &:hover
+        background-color: $theme_green_lite
+
+.all_events_bg
+    background-repeat: $no_repeat
+    background-size: contain
+    width: $full_width
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .all_events_bg
+        background-position: $full_width 0%
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .all_events_bg
+        background-position: $full_width 0%
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .all_events_bg
+        background-position: $full_width 0%
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .all_events_bg
+        background-position: $full_width 0%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .container
+        width: 910px
+    .all_events_bg
+        background-position: $full_width 0%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .container
+        width: 90%
+    .all_events_bg
+        background-position: $full_width 0%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .container
+        width: 90%
+    .all_events_title,
+    .filter_btn
+        padding-top: 20px
+    .all_events_bg
+        background-position: $full_width 3%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .all_events_bg
+        background-position: $full_width 2%

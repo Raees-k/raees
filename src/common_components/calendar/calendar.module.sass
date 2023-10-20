@@ -1,0 +1,78 @@
+@import '../../variable'
+
+.calender_bg
+    background-repeat: $no_repeat
+    background-size: $full_width 110%
+
+.calender_container
+    margin: $zero $auto
+    @extend %container_width
+
+.calender_subcontainer
+    border-radius: 12px
+    box-shadow: 1px 1px 12px #00000029
+
+.main
+    // height: 740px
+
+.slider
+    width: $full_width
+    height: 100%
+    background: #F1F6FF
+
+#calendar
+    width: $full_width $important
+    max-width: $full_width $important
+    min-width: $full_width $important
+    height: $full_width
+    padding: 10px
+    border-radius: 12px $zero $zero $zero $important
+
+.calendar_month_display
+    color: $navyblue_color
+    font-size: 27px
+    font-weight: $bold
+    text-transform: uppercase
+    @extend %font_family_roboto
+
+.calendar_year_display
+    color: #171515 $important
+    font-size: 32px $important
+    font-weight: $bold $important
+    @extend %font_family_roboto
+
+.day
+    color: #223771BE
+    font-weight: $bold
+    width: 90%
+    font-size: 21px
+    @extend %font_family_roboto
+
+.tag
+    display: $flex
+    justify-content: $center
+    align-items: $center
+    width: 90%
+    height: 60px
+    font-size: 16px
+    border-radius: 8px $important
+    p
+        width: 100%
+        word-break: break-word
+        white-space: pre-line
+        overflow-wrap: break-word
+        word-wrap: break-word
+        -ms-word-break: break-word
+        word-break: break-word
+        -ms-hyphens: auto
+        -moz-hyphens: auto
+        -webkit-hyphens: auto
+        hyphens: auto
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .calender_container
+        @include container_width_sm_laptop
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .calender_container
+        width: $full_width

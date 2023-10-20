@@ -1,0 +1,107 @@
+@import '../../../variable'
+
+.event_details_bg
+    background-repeat: $no_repeat
+    background-size: $full_width 90%
+    height: 1000px
+    padding-top: 280px
+    bottom: $zero
+
+.event_details_container
+    margin: $zero $auto
+    @extend %container_width
+
+.event_details_title
+    font-weight: $bold
+    font-size: 28px
+    @extend %font_family_oswald
+
+.event_details_heading,
+.event_details_value
+    @extend %font_size_16
+    @extend %font_family_lato
+
+.event_details_heading
+    font-weight: $bold
+
+.event_details_value
+    color: #6A6A6A
+
+.event_details_des
+    @extend %font_size_16
+    @extend %font_family_lato
+    height: 100px
+
+// .event_details_image,
+.event_details_image_box
+    border-radius: 32px
+    height: 418px
+    width: 500px
+
+.event_details_image_box
+    box-shadow: 30px 30px $secondary
+    background: #e4e4e4
+
+.event_details_video
+    &>div
+        &>iframe
+            border-radius: 32px
+
+.selected
+    border: 2px $solid $black_color
+
+.thumbnail_container
+    height: 84px
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .event_details_bg
+        height: 950px
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .event_details_bg
+        height: 950px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .event_details_bg
+        height: 950px
+        padding-top: 210px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .event_details_bg
+        height: 900px
+        padding-top: 190px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .event_details_bg
+        height: 810px
+        padding-top: 85px
+    .event_details_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .event_details_bg
+        height: 1150px
+        padding-top: 35px
+    .event_details_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .event_details_bg
+        height: 1180px
+        padding-top: 35px
+    .event_details_container
+        width: 95%
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .event_details_container
+        width: $full_width $important
+    .event_details_image,
+    .event_details_image_box
+        height: 250px
+        width: 300px
+    .event_details_bg
+        height: 1065px
+        padding-top: 0px
+    .event_details_heading,
+    .event_details_value,
+    .event_details_des
+        font-size: 14px $important

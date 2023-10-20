@@ -1,0 +1,50 @@
+@import '../../../../variable'
+
+.gallery_inner_section_bg
+    width: $full_width
+    margin-top: 210px
+    background-repeat: $no_repeat
+    background-size: contain
+
+.gallery_inner_section_container
+    margin: $zero $auto
+    @extend %container_width
+
+// @media only screen and (max-width: $beakpoint_desktop_l)
+//     .gallery_inner_section_bg
+//         background-position: $full_width $full_width
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .gallery_inner_section_bg
+        background-position: $full_width $full_width
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .gallery_inner_section_bg
+        background-position: $full_width $full_width
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .gallery_inner_section_bg
+        background-position: $full_width $full_width
+    .gallery_inner_section_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .gallery_inner_section_bg
+        background-position: $full_width $full_width
+        margin-top: 140px
+    .gallery_inner_section_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .gallery_inner_section_bg
+        background-position: $full_width $full_width
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .gallery_inner_section_bg
+        background-position: $full_width $full_width
+        margin-top: 110px
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .gallery_inner_section_bg
+        background-position: $full_width $full_width
+        margin-top: 30px

@@ -1,0 +1,65 @@
+@import '../../variable'
+
+.aboutus_bg
+    width: $full_width
+    background-repeat: $no_repeat, $no_repeat
+    background-size: $full_width 48%
+
+.rest_page_bg
+    width: $full_width
+    background-repeat: $no_repeat
+    background-size: $full_width 40%
+@mixin bg_position
+    background-position: 100% -28%
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .aboutus_bg
+        background-size: $full_width 50%
+        @include bg_position
+    .rest_page_bg
+        background-size: $full_width 50%
+        @include bg_position
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .aboutus_bg
+        background-size: $full_width 50%
+        @include bg_position
+    .rest_page_bg
+        background-size: $full_width 50%
+        @include bg_position
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .aboutus_bg
+        background-size: $full_width 51%
+        @include bg_position
+    .rest_page_bg
+        background-size: $full_width 50%
+        @include bg_position
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .aboutus_bg
+        background-size: $full_width 56%
+        @include bg_position
+    .rest_page_bg
+        background-size: $full_width 50%
+        @include bg_position
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .aboutus_bg
+        background-size: $full_width 62%
+        background-position: 100% -40%
+    .rest_page_bg
+        background-size: contain, contain
+        background-position: $full_width 120%, $full_width 0%
+        // background-size: $full_width 50%
+        // @include bg_position
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .aboutus_bg
+        background-size: $full_width 63%
+        @include bg_position
+    .rest_page_bg
+        // background-size: $full_width 97%, $full_width 50%
+        background-size: contain, contain
+        background-position: $full_width 50%, $full_width 0%
+        // @include bg_position

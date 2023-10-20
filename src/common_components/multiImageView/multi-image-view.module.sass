@@ -1,0 +1,73 @@
+@import "../../variable"
+
+.container
+    padding-top: 85px
+    margin: $zero $auto
+    @extend %container_width
+
+.miv_title,
+.miv_subtitle
+    text-align: $center $important
+
+.miv_title
+    font-size: 35px
+    @extend %font_family_oswald
+
+.miv_subtitle
+    @extend  %font_size_16
+    @extend %font_family_lato
+    color: #525252
+    padding: 0 200px
+
+.image
+    height: 220px
+    width: 230px
+    background: grey
+
+.miv_image,
+.miv_image_box
+    border-radius: 32px
+    overflow: hidden
+    background: #e4e4e4
+
+.miv_image_box
+    height: 200px
+    width: 200px
+    box-shadow: 20px 20px $secondary
+
+.member_name
+    @extend  %font_size_24
+    @extend %font_family_roboto
+    color: #525252
+
+.member_degisnation
+    @extend  %font_size_16
+    @extend %font_family_lato
+    color: #525252
+
+.service_type_video
+    &>div
+        &>iframe
+            border-radius: 32px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .container
+        padding-top: 80px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .container
+        padding-top: 70px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .container
+        width: $full_width
+        padding-top: 30px
+    .member_name
+        text-align: $center
+    .miv_image_box
+        box-shadow: 15px 15px $secondary
+
+// @media only screen and (max-width: $beakpoint_tablet_l)
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .container
+        padding-top: 25px

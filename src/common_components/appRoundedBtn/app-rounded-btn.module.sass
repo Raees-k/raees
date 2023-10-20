@@ -1,0 +1,51 @@
+@import '../../variable'
+
+.btn_none_lite,
+.btn_white_dark,
+.btn_blue_dark,
+.btn_yellow_none
+    font-size: 18px
+    font-weight: $five_hundred
+    box-shadow: 0px 3px 6px #337D582E
+    @extend %font_family_roboto
+
+%btn_none_lite
+    color: $white_color
+    border: 2px $solid $white_color
+
+.btn_none_lite
+    @extend %btn_none_lite
+    &:hover,
+    &:focus
+        @extend %btn_none_lite
+
+%btn_white_dark
+    color: $primary
+    border: 2px $solid $primary
+
+.btn_white_dark
+    @extend %btn_white_dark
+    &:hover,
+    &:focus
+        @extend %btn_white_dark
+
+%btn_blue_dark
+    color: $white_color
+    background-color: $primary
+    border: 2px $solid $primary
+
+.btn_blue_dark
+    @extend %btn_blue_dark
+    &:hover,
+    &:focus
+        @extend %btn_blue_dark
+
+%btn_yellow_none
+    background-color: $secondary
+    border: none
+
+.btn_yellow_none
+    @extend %btn_yellow_none
+    &:hover,
+    &:focus
+        @extend %btn_yellow_none

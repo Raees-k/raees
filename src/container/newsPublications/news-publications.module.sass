@@ -1,0 +1,68 @@
+@import "../../variable"
+
+.bg_color
+    position: $position_absolute
+    width: $full_width
+    height: 1100px
+    background-color: #F5F9F9
+
+.bg_pattern
+    position: $position_absolute
+    width: $full_width
+    background-repeat: $no_repeat,$no_repeat
+    background-size: contain,25%
+
+@media only screen and (max-width: $beakpoint_desktop_l)
+    .bg_pattern
+        height: 1500px
+        background-position: $full_width -23%,114% 61%
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .bg_pattern
+        height: 1200px
+        background-position: $full_width -23%,112% 93%
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .bg_pattern
+        height: 1200px
+        background-position: $full_width -20%,112% 93%
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .bg_pattern
+        height: 1200px
+        background-position: $full_width -18%,112% 93%
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .bg_color
+        height: 1050px
+    .bg_pattern
+        height: 1150px
+        background-position: $full_width -17%,112% 92%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .bg_color
+        height: 905px
+    .bg_pattern
+        height: 993px
+        background-position: $full_width -13%,112% 91.9%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .bg_color
+        height: 905px
+    .bg_pattern
+        height: 993px
+        background-position: $full_width -11%,112% 91.9%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .bg_color
+        height: 910px
+    .bg_pattern
+        height: 936px
+        background-position: $full_width -4%,112% 100%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .bg_color
+        height: 910px
+    .bg_pattern
+        height: 936px
+        background-position: $full_width 0%,112% 98.4%

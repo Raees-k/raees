@@ -1,0 +1,22 @@
+@import '../../variable'
+
+.title_container
+    display: $flex
+    align-items: $center
+    @extend %container_width
+    height: 160px
+    margin: $zero $auto
+
+.title
+    color: $white_color
+    text-transform: capitalize
+    font-size: 35px
+    @extend %font_family_oswald
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .title_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .title_container
+        width: 90%

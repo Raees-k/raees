@@ -1,0 +1,52 @@
+@import '../../../variable'
+
+.buysellsetion_section_bg
+    width: $full_width
+
+.buysellsetion_section_container
+    margin: $zero $auto
+    padding-top: 265px
+    @extend %container_width
+
+.no_data_height
+    width: $full_width
+    height: 500px
+
+.buysellsection_section_tilte
+    font-size: 35px
+    margin-bottom: 36px
+    @extend %font_family_oswald
+
+.dropDownList
+    font-size: 16px
+    @extend %font_family_roboto
+    min-width: 180px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .buysellsetion_section_container
+        padding-top: 250px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .buysellsetion_section_container
+        padding-top: 210px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .buysellsetion_section_container
+        width: 90%
+        padding-top: 150px
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .buysellsetion_section_container
+        width: 95%
+    .buysellsetion_section_bg
+        margin: $zero $auto
+        width: 86%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .buysellsetion_section_container
+        width: $full_width
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .buysellsetion_section_container
+        padding-top: 40px
+        width: 98%

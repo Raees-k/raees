@@ -1,0 +1,74 @@
+@import '../../variable'
+
+%container
+    display: $flex
+    align-items: $center
+    border: 1px $solid #707070
+    border-radius: 50px
+    height: 60px
+
+%container_thick_border
+    display: $flex
+    align-items: $center
+    border: 2px $solid #707070
+    border-radius: 50px
+    height: 60px
+
+.input_container
+    @extend %container
+
+.text_container
+    display: $flex
+    align-items: $center
+    border-radius: 18px
+    border: 1px $solid #707070
+    padding-top: 14px
+    height: 180px
+
+.dropDown_container
+    @extend %container
+    padding: 0 18px
+
+.dropDown_container_thick_border
+    @extend %container_thick_border
+    padding: 0 18px
+
+.input
+    width: $full_width $important
+    border-radius: 50px $important
+    padding: 0 30px $important
+    height: 98% $important
+
+%label_props
+    @extend %font_size_16
+    @extend %font_family_lato
+    font-weight: $bold
+
+//ImageUpload
+.imageDiv
+    backgroundColor: #FFFFFF
+    height: 70px
+    width: 70px
+    border: 1px solid #707070
+    border-radius: 9px
+    overflow: hidden
+    margin-right: 5px
+
+.fileStyle
+    display: none
+
+.labelStyle
+    display: block
+    min-height: 100%
+    height: auto !important
+    height: 100%
+    padding: 22px
+
+.sPadding
+    padding: 21px
+.label
+    @extend %label_props
+
+.label_lite
+    @extend %label_props
+    color: #999

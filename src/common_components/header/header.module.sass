@@ -1,0 +1,93 @@
+@import '../../variable'
+
+.header_container
+  width: $full_width
+  background-color: $white_color
+  z-index: 2
+  padding: 0 50px
+
+.header
+  height: 140px
+
+.header_contain
+  width: $full_width
+  height: 140px
+  display: flex
+  align-items: center
+
+.menu_btn
+  align-items: center
+  font-size: 22px
+  @extend %font_family_lato
+  height: 50px
+  &:hover
+    color: $black_color
+  &:focus
+    color: $black_color
+
+.logo
+  display: $flex
+  justify-content: $center
+  cursor: pointer
+
+.search_btn
+  height: 54px
+
+.sign_up_btn,
+.sign_in_btn
+  width: 145px
+  height: 54px
+  @extend %font_family_lato
+  @extend %font_size_18
+
+.sign_up_btn
+  color: $primary $important
+
+%sign_in_btn_bg_font
+  background: transparent linear-gradient(110deg, #43A937 0%, #233872 100%) 0% 0% no-repeat padding-box
+  color: $white_color
+
+.sign_in_btn
+  box-shadow: 0px 3px 6px #337D582E
+  border-radius: 6px
+  @extend %sign_in_btn_bg_font
+  &:hover,
+  &:focus
+    @extend %sign_in_btn_bg_font
+
+.dispName
+  font-size: 18px
+  font-weight: bold
+
+.dispData
+  font-size: 16px
+
+.search_icon
+  font-size: 22px
+  font-weight: 600
+
+.avatar_img
+  font-size: 28px
+
+.vertical_hr
+  margin: 0 30px
+  height: 60px
+  border: 1px solid #e6e6e6
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+  .sign_up_btn,
+  .sign_in_btn
+    width: 120px
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+  .sign_up_btn,
+  .sign_in_btn
+    width: 80px
+    padding: $zero
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+  .header_container
+    padding: 0 20px
+  .header,
+  .header_contain
+    height: 100px

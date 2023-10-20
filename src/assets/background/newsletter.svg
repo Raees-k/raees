@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1134" height="288" viewBox="0 0 1134 288">
+  <defs>
+    <filter id="Rectangle_25" x="0" y="0" width="1134" height="288" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Contact_Us_Bg_Vector2" data-name="Contact Us Bg Vector2" transform="translate(-113 -5006)">
+    <g transform="matrix(1, 0, 0, 1, 113, 5006)" filter="url(#Rectangle_25)">
+      <rect id="Rectangle_25-2" data-name="Rectangle 25" width="1098" height="252" rx="40" transform="translate(17 17)" fill="#0d3c47"/>
+    </g>
+    <path id="Path_302" data-name="Path 302" d="M11381.1,4213.039s-91.6,21.382-121.088-5.707-32.458-42.118-37.067-86.914,19.233-84.486,47.658-81.052,45.614,35.979,36.171,81.052-27.584,96.6-73.694,136.994-134.638-59.035-134.638-59.035" transform="translate(-10153.098 998.094)" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="15 10" opacity="0.223"/>
+    <path id="Path_303" data-name="Path 303" d="M11380.774,4166.752s-68.752-113.278-98.239-86.189-54.983,60.45-59.593,105.246,19.233,84.486,47.658,81.052,45.614-35.979,36.171-81.052-46.808-104.889-106.232-117.2-102.1,39.236-102.1,39.236" transform="translate(-10968.438 998.094)" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="15 10" opacity="0.223"/>
+    <g id="Group_311" data-name="Group 311" transform="translate(1097.508 5136.986) rotate(124)">
+      <path id="Path_304" data-name="Path 304" d="M28.94,1,10,19.94" transform="translate(6.496)" fill="none" stroke="#436870" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      <path id="Path_305" data-name="Path 305" d="M35.436,1,23.383,35.436,16.5,19.94,1,13.052Z" fill="none" stroke="#436870" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    </g>
+    <g id="Group_312" data-name="Group 312" transform="matrix(0.545, 0.839, -0.839, 0.545, 227.574, 5039.607)">
+      <path id="Path_304-2" data-name="Path 304" d="M28.94,1,10,19.94" transform="translate(6.496)" fill="none" stroke="#436870" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      <path id="Path_305-2" data-name="Path 305" d="M35.436,1,23.383,35.436,16.5,19.94,1,13.052Z" fill="none" stroke="#436870" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

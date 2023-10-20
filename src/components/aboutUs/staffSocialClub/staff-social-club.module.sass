@@ -1,0 +1,46 @@
+@import "../../../variable"
+
+.ssc_bg
+    background-repeat: $no_repeat
+    background-position: 0 0
+    background-size: 100% 42%
+    width: $full_width
+
+.mission_title
+    font-size: 35px
+    @extend %font_family_oswald
+
+.member_name
+    @extend  %font_size_24
+    @extend %font_family_roboto
+    color: #525252
+
+.member_degisnation
+    @extend  %font_size_16
+    @extend %font_family_lato
+    color: #525252
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .ssc_bg
+        background-repeat: $no_repeat
+        background-position: 0 0
+        background-size: 100% 40%
+        width: 100%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .ssc_bg
+        background-size: 100% 30%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .ssc_bg
+        background-size: 100% 16%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .ssc_bg
+        background-size: 133% 16%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .mission_title
+        font-size: 30px $important
+    .ssc_bg
+        background-size: 150% 38%

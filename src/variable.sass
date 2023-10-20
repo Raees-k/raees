@@ -1,0 +1,136 @@
+$primary: #223771
+$secondary: #FDCF3C
+$theme_green: #2D7637
+$primary_lite: #22377150
+$secondary_lite: #FDCF3C50
+$theme_green_lite: #2D763750
+
+$white_color: #fff
+$white_color_lite: #ffffff50
+$white_color_shade2: #f2f2f2
+$black_color: #000
+$black_color_lite: #00000050
+$navyblue_color: #223771
+$navyblue_lite_color: #22377150
+$theme_green_color: #41AC37
+$theme_green_color_disable: #41AC3750
+$app_btn_border_disable: $primary_lite
+$grayishwhite_color: #F4F4F4
+$yellow_color: #fdcf3c
+$testimonial_background_color: #FAF2D9
+$important: !important
+$auto: auto
+$banner_height: $auto
+$position_absolute: absolute
+$position_relative: relative
+$flex: flex
+$zero: 0
+$one: 1
+$three_hundred: 300
+$five_hundred: 500
+$six_hundred: 600
+$bold: bold
+$solid: solid
+$center: center
+$left: left
+$three_px: 3px
+$six_px: 6px
+$twelve_px: 12px
+$sixty_px: 60px
+$thirty-two: 32px
+$one_hundred_twentyfive_px: 125px
+$one_hundred_thirtysix_px: 136px
+$two_hundred_two_px: 202px
+$ten_percen: 10%
+$fourtyfive_percen: 45%
+$fifty_percen: 50%
+$sixty_percen: 60%
+$seventy_percen: 70%
+$eight_percen: 80%
+$full_width: 100%
+$beakpoint_desktop_l: 1920px
+$beakpoint_desktop_m: 1540px
+$beakpoint_desktop: 1440px
+$beakpoint_laptop_l: 1366px
+$beakpoint_laptop_m: 1260px
+$beakpoint_laptop_s: 1024px
+$beakpoint_tablet_l: 990px
+$beakpoint_tablet_s: 770px
+$beakpoint_mobile_l: 545px
+$beakpoint_mobile_s: 425px
+$no_repeat: no-repeat
+$transparent: transparent
+$oswald: 'Oswald'
+$roboto: 'Roboto'
+
+%container_width
+    width: 1140px
+
+@mixin container_width_sm_laptop
+    width: 910px
+
+%font_family_lato
+    font-family: 'Lato' $important
+
+%font_family_roboto
+    font-family: $roboto $important
+
+%font_family_oswald
+    font-family: $oswald $important
+
+%font_size_14
+    font-size: 14px
+
+@mixin font_size_14
+    font-size: 14px $important
+
+%font_size_16
+    font-size: 16px $important
+
+@mixin font_size_20
+    font-size: 20px $important
+
+%font_size_20
+    @include font_size_20
+
+%font_size_24
+    font-size: 24px $important
+
+%font_size_32
+    font-size: 32px $important
+
+@mixin font_size_18
+    font-size: 18px $important
+
+%font_size_18
+    @include font_size_18
+
+%text_align_left
+    text-align: left $important
+
+%box_shadow
+    box-shadow: $zero $three_px 12px #0000003c $important
+
+%app_btn_border_dark
+    border: $three_px $solid $primary $important
+
+%app_btn_border_light
+    border: $three_px $solid $white_color $important
+
+%banner_height
+    height: $banner_height
+
+%display_flex
+    display: flex $important
+
+%djustify_content_flexend
+    justify-content: flex-end $important
+
+%bullet_style
+    content: ""
+    line-height: 1em
+    width: .5em
+    height: .5em
+    float: left
+    margin: .40em .25em 0 -1.5em
+    border-radius: 50%

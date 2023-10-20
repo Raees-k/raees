@@ -1,0 +1,54 @@
+@import '../../../variable'
+
+.service_bg
+    padding-top: 280px
+    bottom: $zero
+
+.service_container
+    margin: $zero $auto
+    @extend %container_width
+    height: 690px
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .service_bg
+        height: 1130px
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .service_bg
+        height: 1085px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .service_bg
+        height: 1015px
+        padding-top: 230px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .service_bg
+        height: 950px
+        padding-top: 190px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .service_bg
+        height: 800px
+        padding-top: 130px
+    .service_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .service_bg
+        height: 1000px
+        padding-top: 100px
+    .service_container
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .service_bg
+        height: 1000px
+        padding-top: 70px
+    .service_container
+        width: 95%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .service_bg
+        height: 310px
+        padding-top: 40px

@@ -1,0 +1,132 @@
+@import '../../../variable'
+
+.event_reg_modal
+    &>div
+        &>div
+            border-radius: 20px
+            &>:first-child
+                // display: none $important
+
+.modal_title
+    font-size: 35px
+    @extend %font_family_roboto
+
+.loader_container
+    position: $position_absolute
+    display: $flex
+    justify-content: $center
+    align-items: $center
+    height: 650px
+    width: 715px
+    .loader
+        height: 50px
+        width: 50px
+        color: $primary
+
+.buysell_HText
+    letter-spacing: var(--unnamed-character-spacing-0)
+    text-align: left
+    //font: normal normal medium 16px/26px Roboto
+    //letter-spacing: 0px
+    //color: #171515
+    @extend %font_family_roboto
+    opacity: 1
+    @extend %font_size_16
+    font-weight: bold
+
+.buysell_card_bottomimage_container
+    width: 47px
+    height: 47px
+    background: transparent 0% 0% no-repeat padding-box
+    opacity: 1
+    //border-radius: 50%
+    position: relative
+
+.buysell_card_bottomimage_round
+    border-radius: 50%
+    min-width: 47px !important
+    min-height: 47px !important
+    max-width: 47px !important
+    max-height: 47px !important
+
+.buysell_text
+    @extend %font_size_16
+    @extend %font_family_roboto
+    //color: #464646
+    opacity: 1
+    display: -webkit-box
+    -webkit-line-clamp: 5
+    -webkit-box-orient: vertical
+    overflow: hidden
+
+.buysell_Titletext
+    letter-spacing: 0px
+    text-align: left
+    //font: normal normal bold 21px/26px Roboto
+    line-height: 26px
+    font-size: 21px
+    font-weight: $bold
+    @extend %font_family_roboto
+    //letter-spacing: 0px
+    //color: #080808
+
+.buysell_TitletextPrice
+    letter-spacing: 0px
+    text-align: right
+    //font: normal normal bold 21px/26px Roboto
+    line-height: 26px
+    font-size: 21px
+    font-weight: $bold
+    @extend %font_family_roboto
+    //letter-spacing: 0px
+    //color: #080808
+
+.buysell_mainImgConatiner
+    position: relative
+    height: 211px
+    //width: 100%
+    width: 342px
+
+.buysell_valText
+    letter-spacing: var(--unnamed-character-spacing-0)
+    text-align: left
+    //font: normal normal normal 16px/26px Roboto
+    line-height: 26px
+    font-size: 16px
+    @extend %font_family_roboto
+    //letter-spacing: 0px
+    font-weight: 500
+    color: #777777
+
+.buysell_col
+    letter-spacing: var(--unnamed-character-spacing-0)
+    text-align: left
+    //font: normal normal normal 16px/26px Roboto
+    @extend %font_family_roboto
+    line-height: 26px
+    font-size: 16px
+    //letter-spacing: 0px
+    font-weight: 500
+    //color: #080808 !important
+
+.buysell_dateMain
+    text-align: left
+    //font: normal normal medium 16px/26px Roboto
+    @extend %font_family_roboto
+    font-weight: 500
+    font-size: 16px
+    line-height: 26px
+    //letter-spacing: 0px
+    color: #777777
+    opacity: 1
+
+.buysell_UserName
+    text-align: left
+    font-weight: 500
+    font-size: 18px
+    //letter-spacing: 0px
+    //color: #080808
+    opacity: 1
+
+.buysell_iconBig
+    font-size: 16px

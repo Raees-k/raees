@@ -1,0 +1,53 @@
+@import '../../variable'
+
+.event_card
+  width: 312px
+  height: 424px
+  box-shadow: 0px 3px 18px #FDCF3D40
+  border-radius: 36px
+  background: $no_repeat
+  cursor: pointer
+  &:hover
+    transform: scale(1.05,1.05)
+
+.event_card_date
+  background-color: $white_color
+  border-radius: 20px
+  height: 110px
+  width: 120px
+  &>.date
+    font-size: 35px
+    font-weight: $bold
+    justify-content: $center
+    display: $flex
+    @extend %font_family_roboto
+  &>.month
+    font-size: 22px
+    font-weight: $five_hundred
+    justify-content: $center
+    display: $flex
+    @extend %font_family_roboto
+
+.event_title
+  height: 90px
+  font-weight: $five_hundred
+  color: $white_color
+  @extend %font_family_roboto
+
+.event_time
+  font-size: 16px
+  color: $white_color
+  font-weight: $five_hundred
+  margin-bottom: 35px
+  @extend %font_family_roboto
+
+.event_button
+  font-size: 18px
+  color: $white_color
+  font-weight: $five_hundred
+  border: 2px $solid $white_color
+  @extend %font_family_roboto
+  &:hover,
+  &:focus
+    color: $white_color
+    border: 2px $solid $white_color

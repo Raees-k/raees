@@ -1,0 +1,30 @@
+@import '../../variable'
+
+.app_btn
+  background-color: $transparent $important
+  width: 150px $important
+  height: 61px $important
+  color: $black_color $important
+  font-weight: $six_hundred $important
+  @extend %font_size_18
+  @extend %font_family_lato
+
+.app_btn_dark
+  color: $primary $important
+  @extend %app_btn_border_dark
+  &:hover
+    @extend %app_btn_border_dark
+
+.app_btn_light
+  color: $white_color $important
+  @extend %app_btn_border_light
+  &:hover
+    @extend %app_btn_border_light
+
+.app_btn_bg
+  background-color: $grayishwhite_color
+  &:hover
+    background-color: $grayishwhite_color
+
+.bg_white
+  background-color: $white_color

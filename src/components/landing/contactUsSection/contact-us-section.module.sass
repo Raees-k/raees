@@ -1,0 +1,183 @@
+@import '../../../variable'
+
+.contact_us_section
+    position: $position_relative
+    height: 1030px
+
+.second_layer,
+.first_layer
+    width: $full_width
+    position: $position_absolute
+
+.logo_tiles
+    background-color: #fff
+    border-radius: 12px
+
+.second_layer
+    z-index: $one
+
+.first_layer
+    z-index: 2
+
+.first_layer
+    top: 370px
+
+.contact_us_container
+    @extend %display_flex
+    justify-content: $center
+    background-color: #edf5e9
+    background-repeat: $no_repeat
+    background-position: $center
+    background-size: cover
+    height: 500px
+
+.contact_us_subcontainer
+    width: 40%
+
+.contact_us_subtext_title,
+.contact_us_subtext_des
+    color: $white_color
+    font-weight: 400
+    @extend %font_family_roboto
+
+.contact_us_subtext_title
+    @extend %font_size_18
+
+.contact_us_subtext_des
+    @extend %font_size_14
+
+.contact_us_text
+    color: $white_color
+    @extend %font_size_32
+    @extend %font_family_oswald
+
+.contact_us_para
+    color: $white_color
+    @extend %font_size_18
+    font-weight: 300
+    @extend %font_family_roboto
+
+.newsletter_container
+    @extend %display_flex
+    flex-direction: column
+    width: 1150px
+    border-radius: 40px
+    background-repeat: $no_repeat
+    background-position: $center
+    height: 252px
+    margin: $auto
+    justify-content: $center
+    align-items: $center
+
+.newsletter_input_container
+    @extend %display_flex
+    width: 60%
+    &> input
+        width: 70%
+        border-radius: $twelve_px $zero $zero $twelve_px
+        border: 1px $solid $white_color
+        padding: 25px
+        &:focus
+            outline: $zero
+        &::placeholder
+            @extend %font_size_18
+            color: $black_color_lite
+    &> button
+        background-color: $secondary
+        width: 30%
+        border: $zero
+        border-radius: $zero $twelve_px $twelve_px $zero
+        @extend %font_size_18
+        font-weight: $bold
+        @extend %font_family_lato
+        &:focus
+            outline: $zero
+            animation-name: btnanimation
+            animation-duration: .25s
+
+.newsletter_input_container
+    &> input,
+    &> button
+        height: $sixty_px
+
+.social_media_icon
+    color: $white_color
+    @extend %font_size_18
+
+.font_size_18
+    @extend %font_size_18
+
+@keyframes btnanimation
+    30%
+        background-color: $secondary
+
+    30%
+        background-color: $secondary_lite
+
+    40%
+        background-color: $secondary
+
+.newsletter_title
+    color: $white_color
+    width: 60%
+    @extend %font_size_32
+    @extend %font_family_oswald
+
+.group_img_bg
+    background-repeat: $no_repeat
+    background-size: $full_width $eight_percen
+    height: 505px
+    position: $position_relative
+    padding-top: 160px
+
+.group_img_container
+    position: $position_relative
+    display: $flex
+    height: 300px
+    bottom: 0px
+    justify-content: $center
+    flex-direction: column
+
+.group_img_title
+    @extend %font_size_32
+    @extend %font_family_oswald
+    text-align: $center
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .contact_us_container
+        height: 545px
+    .group_img_bg
+        padding-top: 120px
+@media only screen and (max-width: $beakpoint_desktop)
+    .contact_us_container
+        height: 500px
+    .group_img_bg
+        padding-top: 160px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .group_img_bg
+        background-size: $full_width $sixty_percen
+
+    .newsletter_container
+        width: $eight_percen
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .contact_us_subcontainer
+        width: $seventy_percen
+
+    .group_img_bg
+        background-size: $full_width $fourtyfive_percen
+
+    .newsletter_container
+        width: $eight_percen
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .contact_us_section
+        height: 620px
+    .newsletter_container
+        width: 100%
+        border-radius: 0px
+    .newsletter_input_container
+        width: 90%
+    .newsletter_title
+        width: 90%

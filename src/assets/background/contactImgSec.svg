@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1519.713" height="503.983" viewBox="0 0 1519.713 503.983">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f3f4"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <path id="Bg_Vectors5" data-name="Bg Vectors5" d="M1.111,8.678,1368,0s168.794,466.512,0,501.721S815.56,149.512,693.934,149.512,173.206,536.929,0,501.721,1.111,8.678,1.111,8.678Z" transform="translate(76.693)" fill="url(#linear-gradient)"/>
+</svg>

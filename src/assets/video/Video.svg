@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1367" height="480" viewBox="0 0 1367 480">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.73" y1="1.864" x2="0.134" y2="0.394" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#42a937"/>
+      <stop offset="1" stop-color="#233771"/>
+    </linearGradient>
+    <filter id="Subtraction_3" x="610" y="166" width="149.996" height="150" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.596"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Video_Silde_Bg" data-name="Video Silde Bg" transform="translate(11729 15801)">
+    <rect id="Rectangle_189" data-name="Rectangle 189" width="1367" height="480" transform="translate(-11729 -15801)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_190" data-name="Rectangle 190" width="1367" height="480" transform="translate(-11729 -15801)" opacity="0.748" fill="url(#linear-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, -11729, -15801)" filter="url(#Subtraction_3)">
+      <path id="Subtraction_3-2" data-name="Subtraction 3" d="M5749,17300a56.735,56.735,0,0,1-31.87-9.736,57.132,57.132,0,0,1-20.65-25.078,56.929,56.929,0,0,1,5.254-54.055,57.309,57.309,0,0,1,15.4-15.395,56.971,56.971,0,0,1,72.174,6.959,57.085,57.085,0,0,1,12.215,18.117,56.935,56.935,0,0,1-5.255,54.057,57.29,57.29,0,0,1-15.4,15.395A56.73,56.73,0,0,1,5749,17300Zm-5-75v36l20-18-20-18Z" transform="translate(-5065 -17003)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

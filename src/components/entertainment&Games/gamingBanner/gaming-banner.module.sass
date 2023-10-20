@@ -1,0 +1,65 @@
+@import '../../../variable'
+
+.bg
+    width: $full_width
+    height: 450px
+    position: $position_relative
+    background-repeat: $no_repeat
+
+.container
+    height: 460px
+    @extend %container_width
+    margin: $zero $auto
+
+.game_banner_container
+    height: 380px
+    display: $flex
+    object-fit: contain
+    position: $position_relative
+    background-position: $full_width
+    margin: $zero $auto
+
+.gaming_image
+    border-radius: 16px
+    display: $flex
+    position: $position_relative
+    justify-content: $center
+    box-shadow: 1px 1px 12px #00000029
+
+@media only screen and (max-width: $beakpoint_desktop)
+    .bg
+        background-size: $full_width 105%
+        height: 1137px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .game_banner_container
+        background-size: $full_width 102%
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .game_banner_container
+        height: 330px
+    .container
+        height: 392px
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .game_banner_container
+        height: 320px
+    .container
+        height: 350px
+        width: 90%
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .game_banner_container
+        height: 300px
+    .container
+        height: 392px
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .game_banner_container
+        height: 240px
+    .container
+        height: 310px
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .game_banner_container
+        height: 135px
+    .container
+        height: 170px

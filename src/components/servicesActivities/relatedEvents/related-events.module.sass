@@ -1,0 +1,24 @@
+@import "../../../variable"
+
+.related_events_bg
+    display: $flex
+    width: $full_width
+    justify-content: $center
+    background-repeat: $no_repeat
+    background-size: $full_width
+
+.container
+    margin: $zero $auto
+    @extend %container_width
+
+.related_events_title
+    font-size: 35px
+    @extend %font_family_oswald
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .container
+        width: 910px
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .container
+        width: 90%

@@ -1,0 +1,59 @@
+@import '../../variable'
+
+.bg
+    display: $flex
+    width: $full_width
+    // height: 550px
+    background-repeat: $no_repeat
+    justify-content: $center
+
+.container
+    margin: $zero $auto
+    @extend %container_width
+
+.registration_header
+    height: 140px
+
+.registration_success
+    font-size: 100px
+
+.reg_title
+    font-size: 35px
+    @extend %font_family_roboto
+
+.reg_container
+    background: $white_color 0% 0% no-repeat padding-box
+    box-shadow: 4px 3px 6px #00000029
+    border: 1px solid #D1D1D1
+    border-radius: 20px
+    padding: 50px
+
+.loader_container
+    position: $position_absolute
+    display: $flex
+    justify-content: $center
+    align-items: $center
+    height: 650px
+    width: 715px
+.done_container
+    height: 650px
+.loader
+    height: 50px
+    width: 50px
+    color: $primary
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .container
+        width: 90% $important
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .loader_container
+        width: 690px
+        height: 690px
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .container
+        width: 95% $important
+    .bg
+        height: 1150px
+    .loader_container
+        width: 400px
+        height: 1215px

@@ -1,0 +1,38 @@
+@import '../../../variable'
+.title
+    @extend %font_size_32
+    @extend %font_family_oswald
+
+.slider_btn
+    border: 3px $solid $primary
+    border-radius: 50%
+    width: $sixty_px
+    height: $sixty_px
+    &:focus,
+    &:hover
+        border: 3px $solid $primary
+
+.slider_btn_disable
+    border: 3px $solid $primary_lite
+    border-radius: 50%
+    width: $sixty_px
+    height: $sixty_px
+    &:focus,
+    &:hover
+        border: 3px $solid $primary_lite
+
+.slider_btn_icon
+    color: $primary
+    @extend %font_size_20
+
+.slider_btn_icon_disable
+    color: $primary_lite
+    @extend %font_size_20
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .title
+        padding-left: 15px
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .App_Btn_Container
+        display: none $important

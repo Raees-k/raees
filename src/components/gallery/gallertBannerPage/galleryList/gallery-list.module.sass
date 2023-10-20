@@ -1,0 +1,38 @@
+@import '../../../../variable'
+
+.gallery_list_card
+    height: 100px
+    background: $white_color
+    box-shadow: 1px 1px 18px #0000001F
+    border-radius: 10px
+
+.list_number
+    background-color: #EAEAEA
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    @extend %font_size_14
+    @extend %font_family_roboto
+
+.list_label
+    color: #707071
+    @extend %font_size_16
+    @extend %font_family_roboto
+    font-weight: $five_hundred
+
+.list_text
+    @extend %font_size_20
+    @extend %font_family_roboto
+    font-weight: $five_hundred
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .list_text
+        font-size: 18px $important
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .list_text
+        font-size: 16px $important
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .list_text
+        font-size: 16px $important

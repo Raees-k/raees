@@ -1,0 +1,36 @@
+@import '../../../variable'
+
+// .contact_details_bg
+
+.contact_details_container
+    margin: $zero $auto
+    width: 80%
+
+.contact_details_title_main
+    font-size: 35px
+    margin-bottom: 24px
+    font-weight: $five_hundred
+    @extend %font_family_roboto
+
+.contact_details_title_sub
+    font-size: 22px
+    @extend %font_family_roboto
+
+.contact_client_enquiry
+    color: #999
+
+.socialmedia_icon
+    background-color: $primary
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    cursor: pointer $important
+
+@media only screen and (max-width: $beakpoint_mobile_s)
+.contact_details_title_main
+    font-size: 24px $important
+.contact_details_title_sub
+    font-size: 17px $important
+    // .contact_details_container
+    //     width: 50% $important
+    //     height: $full_width $important

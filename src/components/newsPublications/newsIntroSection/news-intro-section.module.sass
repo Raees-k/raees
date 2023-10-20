@@ -1,0 +1,73 @@
+@import '../../../variable'
+
+.news_bg
+    display: $flex
+    width: $full_width
+    justify-content: $center
+    height: 850px
+    position: $position_relative
+
+.news_container
+    margin: $zero $auto
+    @extend %container_width
+    position: $position_absolute
+    bottom: $zero
+
+.image
+    background: grey
+    width: 320px
+    height: 320px
+
+@media only screen and (max-width: $beakpoint_desktop_m)
+    .news_bg
+        height: 845px
+    .news_container
+        top: 180px
+
+@media only screen and (max-width: $beakpoint_laptop_l)
+    .news_container
+        top: 155px
+
+@media only screen and (max-width: $beakpoint_laptop_m)
+    .news_bg
+        height: 780px
+    .news_container
+        top: 105px
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_laptop_s)
+    .news_bg
+        height: 660px
+    .news_container
+        top: 65px
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_l)
+    .news_bg
+        height: 660px
+    .news_container
+        top: 65px
+        width: 90%
+
+@media only screen and (max-width: $beakpoint_tablet_s)
+    .news_bg
+        height: 670px
+    .news_container
+        top: 45px
+        width: 95%
+
+// @media only screen and (max-width: $beakpoint_laptop_s)
+//     .news_container
+//         width: 90%
+
+// @media only screen and (max-width: $beakpoint_tablet_l)
+//     .news_container
+//         width: 90%
+
+// @media only screen and (max-width: $beakpoint_tablet_s)
+//     .news_container
+//         width: 95%
+
+@media only screen and (max-width: $beakpoint_mobile_l)
+    .news_container
+        top: -30px
